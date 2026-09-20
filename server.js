@@ -635,7 +635,7 @@ app.get('/admin/properties/:id/delete-confirm', requireAuth, (req, res) => {
       } record(s). This can't be undone.</p>
         <form method="POST" action="/admin/properties/${property.id}/delete">
           <div class="form-actions">
-            <button type="submit" style="background:#b0392f;">Yes, delete permanently</button>
+            <button type="submit" style="background:var(--danger);color:var(--on-danger);">Yes, delete permanently</button>
             <a href="/admin/properties/${property.id}" class="cancel">Cancel</a>
           </div>
         </form>
